@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Личный навигатор сделки с недвижимостью в Москве и Московской области.">
+    <title>Михаил Слободской — личный навигатор сделки</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header"><nav aria-label="Основная навигация"><a href="#scenarios">Маршруты</a><a href="#decision-card">Кабинет решения</a><a href="#contact">Связь</a></nav></header>
+    <main id="top">
+      <section class="navigator-hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p>Москва · Московская область</p>
+          <h1 id="hero-title">Личный навигатор сделки</h1>
+          <p class="hero-lead">За несколько минут вы получите персональный план следующего шага и перечень вопросов, которые важно проверить в вашей ситуации.</p>
+          <p class="hero-note hero-format">До 7 коротких вопросов в Telegram. Без документов и обязательного звонка.</p>
+          <p class="hero-note">Это предварительный ориентир для вашей ситуации, а не юридическое заключение, оценка объекта или гарантия результата.</p>
+          <div class="hero-actions"><a class="button" data-navigator-entry="start" href="https://t.me/MoscowDealNavigatorBot">Начать диагностику в Telegram</a><a id="call-button" class="button button-secondary" href="tel:+79268540227">Позвонить</a></div>
+        </div>
+        <aside class="hero-person" aria-label="Михаил Слободской, 26 лет в недвижимости"><img src="assets/mikhail-slobodskoy.jpg" alt="Михаил Слободской" width="136" height="136"><div><h2>Михаил<br>Слободской</h2><p>26 лет в недвижимости</p></div></aside>
+      </section>
+      <section id="scenarios" class="scenarios" aria-labelledby="scenarios-title"><p class="eyebrow">С чего начнём</p><h2 id="scenarios-title">Выберите вашу задачу</h2><div class="scenario-grid">
+        <article class="scenario-card"><span>01</span><h3>Купить</h3><p>Понять приоритеты, оценить варианты и заранее увидеть важные точки проверки.</p><a data-navigator-entry="buy" href="https://t.me/MoscowDealNavigatorBot">Собрать маршрут покупки →</a></article>
+        <article class="scenario-card"><span>02</span><h3>Продать</h3><p>Сформировать стратегию, подготовить объект и обозначить последовательность действий.</p><a data-navigator-entry="sell" href="https://t.me/MoscowDealNavigatorBot">Собрать маршрут продажи →</a></article>
+        <article class="scenario-card"><span>03</span><h3>Инвестировать</h3><p>Сопоставить цель, горизонт и отношение к риску перед предметным разбором.</p><a data-navigator-entry="invest" href="https://t.me/MoscowDealNavigatorBot">Собрать инвестиционный маршрут →</a></article>
+      </div></section>
+      <section id="how-it-works" class="how-it-works" aria-labelledby="process-title"><p class="eyebrow">Как это работает</p><h2 id="process-title">Сначала ясность, затем решение</h2><ol class="process-list"><li><span>01</span><div><h3>Семь коротких вопросов</h3><p>О цели, объекте, сроках, текущем этапе и главных приоритетах.</p></div></li><li><span>02</span><div><h3>Персональная карта</h3><p>Бот собирает ваши ответы в понятный следующий шаг и категории рисков.</p></div></li><li><span>03</span><div><h3>Предметный разговор</h3><p>Если захотите, Михаил продолжит диалог, уже понимая контекст вашей задачи.</p></div></li></ol></section>
+      <section id="decision-card" class="decision-card" aria-labelledby="card-title"><div><p class="eyebrow">Кабинет решения</p><h2 id="card-title">Не просто заявка — ваш маршрут</h2><p>После диагностики в Telegram вы получите краткую карточку ситуации. Она помогает подготовиться к разговору, не заменяя профессиональную проверку.</p></div><div class="decision-preview" aria-label="Пример предварительной карточки решения"><p>Предварительный ориентир</p><dl><div><dt>Ваша задача</dt><dd>Покупка квартиры для переезда</dd></div><div><dt>Уточнить</dt><dd>Срок, бюджет, требования к локации</dd></div><div><dt>На что обратить внимание</dt><dd>Документы, ликвидность, условия сделки</dd></div><div><dt>Следующий шаг</dt><dd>Обсудить стратегию с Михаилом</dd></div></dl></div></section>
+      <section id="trust" class="trust" aria-labelledby="trust-title"><p class="eyebrow">Основа работы</p><h2 id="trust-title">Опыт — чтобы задавать правильные вопросы</h2><p>26 лет в недвижимости, фокус на Москве и Московской области, внимание к стратегии сделки и её рискам.</p></section>
+      <section id="contact" aria-labelledby="contact-title"><p class="eyebrow">Связь</p><h2 id="contact-title">Начните там, где удобно вам</h2><p>Чтобы не передавать личные данные через сайт, диагностика и заявка проходят в Telegram. Для быстрого диалога также доступны мессенджеры, звонок и электронная почта.</p><div id="messenger-choice" class="messenger-choice" aria-label="Способы связи"><a class="button button-light" href="https://wa.me/79268540227" target="_blank" rel="noopener">WhatsApp</a><a class="button button-light" data-navigator-entry="start" href="https://t.me/MoscowDealNavigatorBot">Telegram</a><span id="max-button" class="button button-light button-unavailable" aria-disabled="true">MAX — скоро</span></div><p class="contact-hours">Звонки — ежедневно с 09:00 до 21:00.</p></section>
+    </main>
+    <aside id="floating-messengers" aria-label="Быстрая связь"><a class="floating-messenger telegram" href="https://t.me/MoscowDealNavigatorBot" target="_blank" rel="noopener" aria-label="Написать в Telegram" title="Telegram"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21.8 3.5 18.5 20c-.25 1.16-.92 1.45-1.86.9l-5.13-3.78-2.47 2.38c-.28.27-.51.5-1.04.5l.37-5.2 9.46-8.55c.41-.37-.09-.58-.64-.21L5.5 13.43.47 11.86c-1.1-.34-1.12-1.1.23-1.62L20.4 2.65c.9-.33 1.68.21 1.4.85Z" fill="currentColor"/></svg></a><a class="floating-messenger whatsapp" href="https://wa.me/79268540227" target="_blank" rel="noopener" aria-label="Написать в WhatsApp" title="WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a9.77 9.77 0 0 0-8.43 14.72L2 22l5.43-1.52A9.77 9.77 0 1 0 12 2Zm0 17.77a7.75 7.75 0 0 1-3.96-1.09l-.28-.16-3.22.9.91-3.13-.18-.29A7.77 7.77 0 1 1 12 19.77Zm4.27-5.81c-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.51.12-.15.23-.59.75-.72.9-.13.16-.26.18-.49.06a6.31 6.31 0 0 1-1.85-1.14 6.93 6.93 0 0 1-1.28-1.59c-.13-.23-.01-.35.1-.47.1-.1.23-.26.34-.39.11-.13.15-.23.23-.39.07-.15.03-.29-.02-.41-.06-.12-.51-1.23-.69-1.68-.18-.44-.36-.38-.5-.39h-.43c-.15 0-.39.06-.59.29-.21.23-.79.77-.79 1.87 0 1.1.81 2.17.92 2.32.11.15 1.59 2.43 3.85 3.4.54.23.96.37 1.29.47.54.17 1.03.14 1.42.09.43-.06 1.36-.55 1.55-1.08.19-.53.19-.98.13-1.08-.05-.09-.2-.15-.43-.27Z" fill="currentColor"/></svg></a><span class="floating-messenger max is-unavailable" aria-disabled="true" aria-label="MAX появится позже" title="MAX — скоро"><span aria-hidden="true">MAX</span></span></aside>
+    <footer><p>Михаил Слободской · Недвижимость в Москве и Московской области</p></footer>
+  </body>
+</html>
